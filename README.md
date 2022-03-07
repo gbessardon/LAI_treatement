@@ -1,10 +1,15 @@
 # LAI_treatement
-This repository describes how to overwrite or add LAI data to the existing ECOCLIMAP-SG climatology, it uses a mix of python scripts and FORTRAN scripts produces in the ECOCLIMAP-SG Wiki  https://opensource.umr-cnrm.fr/projects/ecoclimap-sg/wiki 
-  ## 0.1 Download the ECO-SG LAI 
+This repository describes how to overwrite or add LAI data to the existing ECOCLIMAP-SG (ECO-SG) climatology, it uses a mix of python scripts and FORTRAN scripts produces in the ECOCLIMAP-SG Wiki  https://opensource.umr-cnrm.fr/projects/ecoclimap-sg/wiki 
+  ## 0.1 Download the ECO-SG LAI and the ECO-SG land cover map
 Follow the instruction from https://opensource.umr-cnrm.fr/projects/ecoclimap-sg/wiki 
 and I mainly work with these
 LAI/300M: contains the 36 couples of compressed files LAI_MMJJ_c.dir.gz and LAI_MMJJ_c.hdr.gz, one couple for each 10-day period. These LAI data come from the 2014-2016 copernicus satellite LAI data at 300m-resolution.
   ## 0.2 Get your LAI
+  
+  ## 0.3 Create ECO-SG land cover map chunk Chunk
+  Create a tiff file of ECOCLIMAP-Sg of the area you want to overwrite with the LAI data.
+  First of all the format of the ECO-SG header file (ecosg_final_map.hdr) does not work with gdal we need to replace it with the ecosg_final_map.hdr file contained in the Create_ECO-SG_chunk folder 
+  Create_ECO-SG_chunk/Create_ecosg_tif: chunk converts the ecosg_final_map.dir/.hdr couple to a tif file over a domain expressed by latitude(min/max),longitudes(min/max) 
  
   ## 1. Uncompress ECOCLIMAP-SG files
   ### 1.1 uncompress all the .gz file

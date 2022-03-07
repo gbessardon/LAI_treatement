@@ -1,0 +1,9 @@
+    nrows 64800
+    ncols 129600
+    nodata 0
+    nbands 1
+    nbits 8
+    ULXMAP     -179.99861111111111
+    ULYMAP       89.99861111111111
+    XDIM          0.00277777777777
+    YDIM          0.00277777777777
