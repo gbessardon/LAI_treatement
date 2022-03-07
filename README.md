@@ -1,13 +1,10 @@
 # LAI_treatement
-
-details how to create LAI files for ECOCLIMAP_SG
+This repository describes how to overwrite or add LAI data to the existing ECOCLIMAP-SG climatology, it uses a mix of python scripts and FORTRAN scripts produces in the ECOCLIMAP-SG Wiki  https://opensource.umr-cnrm.fr/projects/ecoclimap-sg/wiki 
   ## 0.1 Download the ECO-SG LAI 
 Follow the instruction from https://opensource.umr-cnrm.fr/projects/ecoclimap-sg/wiki 
 and I mainly work with these
 LAI/300M: contains the 36 couples of compressed files LAI_MMJJ_c.dir.gz and LAI_MMJJ_c.hdr.gz, one couple for each 10-day period. These LAI data come from the 2014-2016 copernicus satellite LAI data at 300m-resolution.
-  ## 0.2 Download the Copernicus data
- Data are available here I don't think there is an automatic way to download these rather than through the website user interface https://land.copernicus.eu/global/products/LAI
- You should end up with an ensemble of tiff files for each 10 days period
+  ## 0.2 Get your LAI
  
   ## 1. Uncompress ECOCLIMAP-SG files
   ### 1.1 uncompress all the .gz file
